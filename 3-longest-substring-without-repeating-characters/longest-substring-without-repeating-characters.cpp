@@ -7,7 +7,7 @@ public:
         int l = 0, ans = 0;
         for (int r = 0; r < s.size(); r++)
         {
-            while (st.count(s[r]))
+            while (st.contains(s[r]))
             {
                 st.erase(s[l]);
                 l++;
